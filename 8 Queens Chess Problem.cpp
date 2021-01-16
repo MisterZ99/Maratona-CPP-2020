@@ -85,7 +85,12 @@ void combinacoes(int j){
     if(y==y_permanente){
         y++;
         if(y==8){
-            printf(" %d      ", sol+1);
+            if(sol+1<10){
+                printf(" %d      ", sol+1);
+            }
+            else{
+                printf("%d      ", sol+1);
+            }
             int k;
             for(k=0; k<7; k++){
                 printf("%d ", solucao[k]+1);
@@ -100,7 +105,12 @@ void combinacoes(int j){
                 tabuleiro[x][y]=1;
                 solucao[y]=x;
                 if(y==7){
-                    printf(" %d      ", sol+1);
+                    if(sol+1<10){
+                        printf(" %d      ", sol+1);
+                    }
+                    else{
+                        printf("%d      ", sol+1);
+                    }
                     int k;
                     for(k=0; k<7; k++){
                         printf("%d ", solucao[k]+1);
