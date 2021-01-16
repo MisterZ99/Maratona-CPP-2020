@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>//Presentation Error
+#include <bits/stdc++.h>
 using namespace std;
 
 vector<vector<int>> tabuleiro;
@@ -86,7 +86,7 @@ void combinacoes(int j){
         y++;
         if(y==8){
             if(sol+1<10){
-                printf(" %d      ", sol+1);
+                printf("%2d      ", sol+1);
             }
             else{
                 printf("%d      ", sol+1);
@@ -106,7 +106,7 @@ void combinacoes(int j){
                 solucao[y]=x;
                 if(y==7){
                     if(sol+1<10){
-                        printf(" %d      ", sol+1);
+                        printf("%2d      ", sol+1);
                     }
                     else{
                         printf("%d      ", sol+1);
